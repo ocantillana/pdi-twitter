@@ -11,9 +11,9 @@ Karena pada saat penulisan ini repository SVN sepertinya sedang bermasalah, sila
  * *pdi-twitter.ktr* : adalah script utama.
  * *getfollowers.bat* : adalah batch script untuk mentrigger pdi-twitter.ktr.
 
-Cara penggunaannya adalah sebagai berikut :
+== Syntax Penggunaan ==
 
-*getfollowers.bat handle*
+   *getfollowers.bat handle*
 
 Catatan : handle tanpa menggunakan tanda @
 
