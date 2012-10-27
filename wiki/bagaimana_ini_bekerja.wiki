@@ -1,5 +1,6 @@
-#summary One-sentence summary of this page.
+#summary Penjelasan singkat penggunaan script.
 #labels Featured
+#sidebar sidebar_page
 
 = Bagaimana Script ini Bekerja ? =
 
