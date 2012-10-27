@@ -17,7 +17,7 @@ Karena pada saat penulisan ini repository SVN sepertinya sedang bermasalah, sila
 
 == Syntax Penggunaan ==
 
-   *getfollowers.bat handle*
+{ getfollowers.bat handle }
 
 Catatan : handle tanpa menggunakan tanda @
 
