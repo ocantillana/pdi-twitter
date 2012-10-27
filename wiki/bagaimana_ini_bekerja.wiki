@@ -21,7 +21,7 @@ Karena pada saat penulisan ini repository SVN sepertinya sedang bermasalah, sila
     getfollowers.bat handle
 }}}
 
-Catatan : handle tanpa menggunakan tanda @
+Catatan : handle digunakan tanpa tanda *@*
 
 == System Requirement ==
  * Java Runtime Environment
