@@ -7,9 +7,11 @@
 <wiki:toc max_depth="3" />
 
 == Pendahuluan ==
-Script ETL ini bekerja melalui lingkungan PDI (console maupun aplikasi Spoon). Argumen pertama yang dikirimkan ke script ini adalah id twitter kita. 
+Script ETL ini bekerja melalui lingkungan PDI (console maupun aplikasi Spoon). Argumen pertama yang dikirimkan ke script ini adalah id twitter kita.
 
 Misalkan jika url twitter kita adalah http://www.twitter.com/belajarexcel maka handlenya adalah *belajarexcel*.
+
+Input ini kemudian akan diquery ke URL Twitter seperti yang tercantum pada dokumentasi di [https://dev.twitter.com/docs/api/1/get/followers/ids].
 
 Karena pada saat penulisan ini repository SVN sepertinya sedang bermasalah, silahkan download contoh scriptnya di bagian download kami. 
  * *pdi-twitter.ktr* : adalah script utama.
