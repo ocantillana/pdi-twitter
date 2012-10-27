@@ -5,13 +5,13 @@
 
 Script ETL ini bekerja melalui lingkungan PDI (console maupun aplikasi Spoon). Argumen pertama yang dikirimkan ke script ini adalah id twitter kita. 
 
-Misalkan jika url twitter kita adalah http://www.twitter.com/belajarexcel maka handlenya adalah belajarexcel.
+Misalkan jika url twitter kita adalah http://www.twitter.com/belajarexcel maka handlenya adalah *belajarexcel*.
 
 Karena pada saat penulisan ini repository SVN sepertinya sedang bermasalah, silahkan download contoh scriptnya di bagian download kami.
 
 O ya, requirement untuk script ini adalah :
-# Java Runtime Environment
-# Pentaho Data Integration
+ * Java Runtime Environment
+ * Pentaho Data Integration
 
 Instalasi dapat melihat artikel kami di [http://pentaho.phi-integration.com/kettle http://pentaho.phi-integration.com/kettle]
 
