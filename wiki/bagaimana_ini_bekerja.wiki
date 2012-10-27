@@ -3,6 +3,9 @@
 
 = Bagaimana Script ini Bekerja ? =
 
+<wiki:toc max_depth="3" />
+
+== Pendahuluan ==
 Script ETL ini bekerja melalui lingkungan PDI (console maupun aplikasi Spoon). Argumen pertama yang dikirimkan ke script ini adalah id twitter kita. 
 
 Misalkan jika url twitter kita adalah http://www.twitter.com/belajarexcel maka handlenya adalah *belajarexcel*.
@@ -17,7 +20,7 @@ Karena pada saat penulisan ini repository SVN sepertinya sedang bermasalah, sila
 
 Catatan : handle tanpa menggunakan tanda @
 
-O ya, requirement untuk script ini adalah :
+== System Requirement ==
  * Java Runtime Environment
  * Pentaho Data Integration
 
@@ -25,13 +28,13 @@ Instalasi dapat melihat artikel kami di [http://pentaho.phi-integration.com/kett
 
 Berikut adalah screenshot cara menjalankan script ini pada Windows maupun Linux.
 
-*Windows 7*
+== Screenshots : Windows 7 ==
 
 [https://sites.google.com/a/phi-integration.com/pentaho-open-source-business-intelligence/kettle/twitter-api-dengan-pdi/execute_shell_windows.png]
 
 [https://efab85da-a-3e3a5889-s-sites.googlegroups.com/a/phi-integration.com/pentaho-open-source-business-intelligence/kettle/twitter-api-dengan-pdi/commandline_windows.png]
 
-*Linux (Debian)*
+== Screenshots : Linux (Debian) ==
 
 [https://efab85da-a-3e3a5889-s-sites.googlegroups.com/a/phi-integration.com/pentaho-open-source-business-intelligence/kettle/twitter-api-dengan-pdi/execute_shell_linux.png]
 
