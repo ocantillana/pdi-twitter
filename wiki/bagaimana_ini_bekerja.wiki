@@ -3,12 +3,16 @@
 
 = Bagaimana Script ini Bekerja ? =
 
-Add your content here.
+Script ETL ini bekerja melalui lingkungan PDI (console maupun aplikasi Spoon). Argumen pertama yang dikirimkan ke script ini adalah id twitter kita. 
 
+Misalkan jika url twitter kita adalah http://www.twitter.com/belajarexcel maka handlenya adalah belajarexcel.
 
-= Details =
+Karena pada saat penulisan ini repository SVN sepertinya sedang bermasalah, silahkan download contoh scriptnya di bagian download kami.
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+O ya, requirement untuk script ini adalah :
+# Java Runtime Environment
+# Pentaho Data Integration
+
+Instalasi dapat melihat artikel kami di [http://pentaho.phi-integration.com/kettle http://pentaho.phi-integration.com/kettle]
+
+Berikut adalah screenshot cara menjalankan script ini pada Windows maupun Linux.
