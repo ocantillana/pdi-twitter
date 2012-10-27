@@ -7,7 +7,9 @@ Script ETL ini bekerja melalui lingkungan PDI (console maupun aplikasi Spoon). A
 
 Misalkan jika url twitter kita adalah http://www.twitter.com/belajarexcel maka handlenya adalah *belajarexcel*.
 
-Karena pada saat penulisan ini repository SVN sepertinya sedang bermasalah, silahkan download contoh scriptnya di bagian download kami. Terdapat dua file yaitu pdi-twitter.ktr adalah script utama, sedangkan getfollowers.bat adalah batch script untuk mentrigger pdi-twitter.ktr.
+Karena pada saat penulisan ini repository SVN sepertinya sedang bermasalah, silahkan download contoh scriptnya di bagian download kami. 
+ * *pdi-twitter.ktr* : adalah script utama.
+ * *getfollowers.bat* : adalah batch script untuk mentrigger pdi-twitter.ktr.
 
 Cara penggunaannya adalah sebagai berikut :
 
