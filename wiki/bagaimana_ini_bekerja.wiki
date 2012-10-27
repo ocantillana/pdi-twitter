@@ -25,6 +25,14 @@ Instalasi dapat melihat artikel kami di [http://pentaho.phi-integration.com/kett
 
 Berikut adalah screenshot cara menjalankan script ini pada Windows maupun Linux.
 
+*Windows 7*
+
 [https://sites.google.com/a/phi-integration.com/pentaho-open-source-business-intelligence/kettle/twitter-api-dengan-pdi/execute_shell_windows.png]
 
 [https://efab85da-a-3e3a5889-s-sites.googlegroups.com/a/phi-integration.com/pentaho-open-source-business-intelligence/kettle/twitter-api-dengan-pdi/commandline_windows.png]
+
+*Linux (Debian)*
+
+[https://efab85da-a-3e3a5889-s-sites.googlegroups.com/a/phi-integration.com/pentaho-open-source-business-intelligence/kettle/twitter-api-dengan-pdi/execute_shell_linux.png]
+
+[https://efab85da-a-3e3a5889-s-sites.googlegroups.com/a/phi-integration.com/pentaho-open-source-business-intelligence/kettle/twitter-api-dengan-pdi/execute_shell_linux2.png]
