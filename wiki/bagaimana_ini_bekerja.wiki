@@ -20,7 +20,7 @@ Karena pada saat penulisan ini repository SVN sepertinya sedang bermasalah, sila
 == Syntax Penggunaan ==
 
 {{{
-    getfollowers.bat handle
+    getfollowers.bat handle next_cursor
 }}}
 
 Catatan : handle digunakan tanpa tanda *@*
