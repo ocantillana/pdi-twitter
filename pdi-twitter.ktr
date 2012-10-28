@@ -94,7 +94,7 @@
     </attributes>
   </connection>
   <order>
-  <hop> <from>Goto Twitter</from><to>Get JSON</to><enabled>Y</enabled> </hop>  <hop> <from>Get JSON</from><to>First Selection</to><enabled>Y</enabled> </hop>  <hop> <from>First Selection</from><to>Replace in string</to><enabled>Y</enabled> </hop>  <hop> <from>Generate Rows</from><to>Get Twitter Handle</to><enabled>Y</enabled> </hop>  <hop> <from>Constructing URL API</from><to>Goto Twitter</to><enabled>Y</enabled> </hop>  <hop> <from>Replace in string</from><to>Split to Rows</to><enabled>Y</enabled> </hop>  <hop> <from>Split to Rows</from><to>Final Selection</to><enabled>Y</enabled> </hop>  <hop> <from>Final Selection</from><to>hasil.txt</to><enabled>Y</enabled> </hop>  <hop> <from>Goto Twitter</from><to>Write to log</to><enabled>N</enabled> </hop>  <hop> <from>Get Twitter Handle</from><to>If field value is null</to><enabled>Y</enabled> </hop>  <hop> <from>If field value is null</from><to>Constructing URL API</to><enabled>Y</enabled> </hop>  </order>
+  <hop> <from>Goto Twitter</from><to>Get JSON</to><enabled>Y</enabled> </hop>  <hop> <from>Get JSON</from><to>First Selection</to><enabled>Y</enabled> </hop>  <hop> <from>First Selection</from><to>Replace in string</to><enabled>Y</enabled> </hop>  <hop> <from>Generate Rows</from><to>Get Twitter Handle</to><enabled>Y</enabled> </hop>  <hop> <from>Constructing URL API</from><to>Goto Twitter</to><enabled>Y</enabled> </hop>  <hop> <from>Replace in string</from><to>Split to Rows</to><enabled>Y</enabled> </hop>  <hop> <from>Split to Rows</from><to>Final Selection</to><enabled>Y</enabled> </hop>  <hop> <from>Final Selection</from><to>hasil.txt</to><enabled>Y</enabled> </hop>  <hop> <from>Get Twitter Handle</from><to>If field value is null</to><enabled>Y</enabled> </hop>  <hop> <from>If field value is null</from><to>Constructing URL API</to><enabled>Y</enabled> </hop>  </order>
   <step>
     <name>Constructing URL API</name>
     <type>ScriptValueMod</type>
@@ -143,6 +143,10 @@ var url_api = &quot;https:&#47;&#47;api.twitter.com&#47;1&#47;followers&#47;ids.
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
+      </field>      <field>        <name>next_cursor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
       </field>        <select_unspecified>N</select_unspecified>
       <meta>        <name>nourut</name>
         <rename>nourut</rename>
@@ -175,6 +179,10 @@ var url_api = &quot;https:&#47;&#47;api.twitter.com&#47;1&#47;followers&#47;ids.
            <schema_name/>
            </partitioning>
     <fields>      <field>        <name>ids</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>next_cursor</name>
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
@@ -383,6 +391,37 @@ var url_api = &quot;https:&#47;&#47;api.twitter.com&#47;1&#47;followers&#47;ids.
     </step>
 
   <step>
+    <name>If field value is null</name>
+    <type>IfNull</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <replaceAllByValue/>
+      <replaceAllMask/>
+      <selectFields>Y</selectFields>
+      <selectValuesType>N</selectValuesType>
+    <valuetypes>
+      </valuetypes>
+    <fields>
+      <field>
+        <name>cursor_from</name>
+        <value>-1</value>
+        <mask/>
+        </field>
+      </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>170</xloc>
+      <yloc>145</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>Replace in string</name>
     <type>ReplaceString</type>
     <description/>
@@ -442,38 +481,6 @@ var url_api = &quot;https:&#47;&#47;api.twitter.com&#47;1&#47;followers&#47;ids.
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>624</xloc>
       <yloc>216</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Write to log</name>
-    <type>WriteToLog</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-      <loglevel>log_level_basic</loglevel>
-      <displayHeader>Y</displayHeader>
-      <logmessage/>
-    <fields>
-      <field>
-        <name>handle</name>
-        </field>
-      <field>
-        <name>url_api</name>
-        </field>
-      <field>
-        <name>result</name>
-        </field>
-      </fields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>383</xloc>
-      <yloc>289</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -581,42 +588,23 @@ var url_api = &quot;https:&#47;&#47;api.twitter.com&#47;1&#47;followers&#47;ids.
         <length>30</length>
         <precision>-1</precision>
       </field>
+      <field>
+        <name>next_cursor</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>30</length>
+        <precision>-1</precision>
+      </field>
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>821</xloc>
       <yloc>208</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>If field value is null</name>
-    <type>IfNull</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-      <replaceAllByValue/>
-      <replaceAllMask/>
-      <selectFields>Y</selectFields>
-      <selectValuesType>N</selectValuesType>
-    <valuetypes>
-      </valuetypes>
-    <fields>
-      <field>
-        <name>cursor_from</name>
-        <value>-1</value>
-        <mask/>
-        </field>
-      </fields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>170</xloc>
-      <yloc>145</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
