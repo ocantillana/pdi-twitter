@@ -14,13 +14,15 @@ Misalkan jika url twitter kita adalah http://www.twitter.com/belajarexcel maka h
 Input ini kemudian akan diquery ke URL Twitter seperti yang tercantum pada dokumentasi di [https://dev.twitter.com/docs/api/1/get/followers/ids].
 
 Karena pada saat penulisan ini repository SVN sepertinya sedang bermasalah, silahkan download contoh scriptnya di bagian download kami. 
- * *pdi-twitter.ktr* : adalah script utama.
+ * *pdi-twitter.job* : job controller.
+ * *set_env_var.ktr* : adalah script inisialisasi.
+ * *pdi-twitter.ktr* : adalah script utama (akuisisi dan transformasi data ke text file).
  * *getfollowers.bat* : adalah batch script untuk mentrigger pdi-twitter.ktr.
 
 == Syntax Penggunaan ==
 
 {{{
-    getfollowers.bat handle next_cursor
+    getfollowers.bat handle
 }}}
 
 Catatan : handle digunakan tanpa tanda *@*
