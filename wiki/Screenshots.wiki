@@ -1,4 +1,5 @@
 #labels Featured
+#sidebar sidebar_page
 #Gallery Screenshot ETL.
 
 <wiki:toc max_depth="2" />
