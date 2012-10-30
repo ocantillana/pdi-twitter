@@ -28,8 +28,8 @@ Karena pada saat penulisan ini repository SVN sepertinya sedang bermasalah, sila
 Catatan : handle digunakan tanpa tanda *@*
 
 == System Requirement ==
- * Java Runtime Environment
- * Pentaho Data Integration
+ * Java Runtime Environment (versi 1.5 ke atas)
+ * Pentaho Data Integration (versi 4.2 ke atas)
 
 Instalasi dapat melihat artikel kami di [http://pentaho.phi-integration.com/kettle http://pentaho.phi-integration.com/kettle]
 
