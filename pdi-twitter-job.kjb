@@ -177,8 +177,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>381</xloc>
-      <yloc>45</yloc>
+      <xloc>386</xloc>
+      <yloc>53</yloc>
       </entry>
     <entry>
       <name>Delete file</name>
@@ -259,5 +259,26 @@
     </hop>
   </hops>
   <notepads>
+    <notepad>
+      <note>Looping sampai seluruh id follower diakuisisi</note>
+      <xloc>458</xloc>
+      <yloc>121</yloc>
+      <width>266</width>
+      <heigth>25</heigth>
+      <fontname/>
+      <fontsize>-1</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>165</backgroundcolorgreen>
+      <backgroundcolorblue>0</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
   </notepads>
 </job>
