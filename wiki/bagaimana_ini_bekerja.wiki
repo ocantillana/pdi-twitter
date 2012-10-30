@@ -27,6 +27,8 @@ Karena pada saat penulisan ini repository SVN sepertinya sedang bermasalah, sila
 
 Catatan : handle digunakan tanpa tanda *@*
 
+Output : File dengan nama *hasil.txt* (pada folder yang sama dengan lokasi script dijalankan)
+
 == System Requirement ==
  * Java Runtime Environment (versi 1.5 ke atas)
  * Pentaho Data Integration (versi 4.2 ke atas)
